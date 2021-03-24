@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             callback(undefined , 
                 // weather_des : response.body.current.weather_descriptions, 
                 // temp : response.body.current.temperature});
-                "The weather today is "+ response.body.current.weather_descriptions +" and the temperature is "+ response.body.current.temperature);
+                "Today's weather is as follows: \n Weather: "+ response.body.current.weather_descriptions +"\n Temperature: "+ response.body.current.temperature+ " °C. \n Wind Speed: " +response.body.current.wind_speed+ "Km/hr. \n Preciptation: "+ response.body.current.precip+ "%. \n Humidity: "+ response.body.current.humidity+ "%.");
         }
     })
     
